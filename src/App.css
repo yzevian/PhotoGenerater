@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro&family=Open+Sans&display=swap');
+
+* {
+  background: #242424;
+  color: #fff;
+}
+
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  font-family: 'Open Sans', Helvetica, sans-serif;
+}
+
+h1 {
+  font-family: 'Anonymous Pro', monospace;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #fff;
+}
+
+.line-1{
+  /* position: relative; */
+  top: 50%;  
+  width: 24em;
+  margin: 0 auto;
+  border-right: 2px solid rgba(255,255,255,.75);
+  font-size: 180%;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  transform: translateY(-50%);    
+}
+
+/* Animation */
+.anim-type{
+animation: typewriter 4s steps(44) 1s 1 normal both,
+           blinkTextCursor 500ms steps(44) infinite normal;
+}
+@keyframes typewriter{
+from{width: 0;}
+to{width: 11em;}
+}
+@keyframes blinkTextCursor{
+from{border-right-color: rgba(255,255,255,.75);}
+to{border-right-color: transparent;}
+}
+
+
+
+.btn {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1.5rem 4rem;
+  display: inline-block;
+  border-radius: 10rem;
+  transition: all .2s;
+  position: relative;
+  font-size: 1.6rem;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  /* box-shadow: 0 1rem 2rem rgba(#000, .2); */
+}
+
+.btn:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}
+
+.btn:active {
+  transform: translateY(-1px);
+  /* box-shadow: 0 .5rem 1rem rgba(#000, .2); */
+}
+
+.btn {
+  background-color: #dd2c00;
+  color: #fff;
+  cursor: pointer;
+}
+
+img {
+  border-radius: 10px;
+  margin: 30px;
+}
+
+
